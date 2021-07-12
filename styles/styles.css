@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 700px;
+    background: #6465a5;
+    padding: 40px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+
+.address{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: #a9aacd;
+    margin-bottom: 50px;
+}
+
+.inner-address p{
+    font-size: 12px;
+    
+}
+
+.inner-address fas{
+    font-size: 30px;
+    margin-bottom: 10px;
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.form-title{
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.input-form{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.inner-msg{
+    width: 100%;
+    margin-bottom: 20px;
+    align-items: center;
+
+}
+
+.input > input{
+    border: 0;
+    width: 260px;
+    padding: 10px 20px;
+    outline: none;
+
+}
+
+.msg > textarea{
+    width : 100%;
+    border: 0;
+    outline: none;
+    padding: 10px 20px;
+    height: 80px;
+     
+}
+
+.btn{
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5 ease;
+
+}
+
+.btn:hover{
+    background: #fff;
+    color: #6465a5;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    color: #a9aacd;
+}
+
+.inner-social .fab{
+    font-size: 30px;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: all 0.5 ease;
+
+}
+
+.fab:hover{
+    color: #fff;
+}
+
+::-webkit-input-placeholder{
+    color:#a9aacd;
+}
+
+@media screen and (max-width: 640px){
+    .input-form{
+        flex-direction: column;
+    }
+
+    .input:first-child > input{
+        margin-bottom: 20px;
+    }
+
+    .form .input>input{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .address, .social{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inner-address,.inner-social{
+        margin-bottom: 20px;
+    }
+
+}

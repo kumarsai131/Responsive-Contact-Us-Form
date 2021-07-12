@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://kit.fontawesome.com/f6afe929bc.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn").click(function(){
+                $(".input input, .msg textarea").val("");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Contact Us</h1>
+
+        <div class="address">
+            <div class="inner-address">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>
+                    Visakhapatnam, AP </br> AP 530022, India
+                </p>
+            </div>
+            <div class="inner-address">
+                <i class="fas fa-envelope"></i>
+                <p>hellomobiles@gmail.com</p>
+            </div>
+            <div class="inner-address">
+                <i class="fas fa-phone-volume"></i>
+                <p>+91 9876543210</p>
+            </div>
+        </div>
+
+        <div class="form">
+            <div class="form-title">
+                Leave us your precious message
+            </div>
+            <div class="input-form">
+                <div class="input">
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Email">
+                </div>
+            </div>
+            <div class="inner-msg">
+                <div class="msg">
+                    <textarea placeholder="Message"></textarea>
+                </div>
+            </div>
+            <div class="btn">
+                Send Message
+            </div>
+        </div>
+
+        <div class="social">
+            <div class="inner-social">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div class="inner-social">
+                <i class="fab fa-google-plus-g"></i>
+                <i class="fab fa-reddit-alien"></i>
+                <i class="fab fa-whatsapp"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
